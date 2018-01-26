@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}INDEX{% endblock %}
+{% block head %}
+    {% for i in css_script1 %}
+    <link rel="stylesheet" href="/_static/{{i}}"/>
+    {% endfor %}
+{% endblock %}
+{% block content %}
+    <h1>INDEX</h1>
+   
+    {% for j in jv_script1 %}
+          <script src="/_static/{{j}}></script>
+    {% endfor %}
+    
+{% endblock %}
